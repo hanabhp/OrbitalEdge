@@ -2,7 +2,7 @@
 
 Cross-layer protocol invariants for proactive handover at the LEO satellite edge
 
-[![SEC 2026](https://img.shields.io/badge/Venue-SEC%202026-7b3fa0?style=flat-square)](#license)
+
 [![Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-f0b030?style=flat-square)](https://hanabhp.github.io/OrbitalEdge/demo/)
 [![Tests](https://img.shields.io/github/actions/workflow/status/hanabhp/OrbitalEdge/test.yml?label=tests&style=flat-square)](https://github.com/hanabhp/OrbitalEdge/actions)
 [![License](https://img.shields.io/badge/License-MIT-3dba90?style=flat-square)](LICENSE)
