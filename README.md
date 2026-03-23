@@ -2,17 +2,11 @@
 
 Cross-layer protocol invariants for proactive handover at the LEO satellite edge
 
-[![SEC 2026](https://img.shields.io/badge/Venue-SEC%202026-7b3fa0?style=flat-square)](#citation)
-[![Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-f0b030?style=flat-square)](https://hanapasandi.github.io/orbitaledge/demo/)
-[![Tests](https://img.shields.io/github/actions/workflow/status/hanapasandi/orbitaledge/test.yml?label=tests&style=flat-square)](https://github.com/hanapasandi/orbitaledge/actions)
+[![SEC 2026](https://img.shields.io/badge/Venue-SEC%202026-7b3fa0?style=flat-square)](#license)
+[![Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-f0b030?style=flat-square)](https://hanabhp.github.io/OrbitalEdge/demo/)
+[![Tests](https://img.shields.io/github/actions/workflow/status/hanabhp/OrbitalEdge/test.yml?label=tests&style=flat-square)](https://github.com/hanabhp/OrbitalEdge/actions)
 [![License](https://img.shields.io/badge/License-MIT-3dba90?style=flat-square)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-555?style=flat-square)](https://python.org)
-
-Hannah B. Pasandi, Franck Rousseau, Tamer Nadeem
-
-UC Berkeley Sky Computing Lab / University Grenoble Alpes / Virginia Commonwealth University
-
-Contact: hanapasandi@eecs.berkeley.edu
 
 
 ## What this is
@@ -41,11 +35,11 @@ The demo runs entirely in the browser. No server, no build step, no installation
 Run locally:
 
 ```bash
-git clone https://github.com/hanapasandi/orbitaledge
-open orbitaledge/demo/index.html
+git clone https://github.com/hanabhp/OrbitalEdge
+open OrbitalEdge/demo/index.html
 ```
 
-Hosted version: https://hanapasandi.github.io/orbitaledge/demo/
+Hosted version: https://hanabhp.github.io/OrbitalEdge/demo/
 
 The demo shows 5 LEO satellites orbiting at 530 km, a moving user (driving, walking,
 or static), and the predictor updating in real time from protocol invariant traces. The
@@ -171,8 +165,8 @@ orbitaledge/
 ## Quick start
 
 ```bash
-git clone https://github.com/hanapasandi/orbitaledge
-cd orbitaledge
+git clone https://github.com/hanabhp/OrbitalEdge
+cd OrbitalEdge
 
 pip install -r requirements.txt
 
@@ -229,23 +223,6 @@ of the real dataset, calibrated to the characterization in the paper.
 
 Pre-trained LLM weights (Llama-3.2-1B LoRA checkpoint, approximately 1.2 GB) are
 available on request.
-
-
-## Citation
-
-If you use OrbitalEdge or its protocol invariants in your work, please cite:
-
-```bibtex
-@inproceedings{pasandi2026orbitaledge,
-  author    = {Hannah B. Pasandi and Franck Rousseau and Tamer Nadeem},
-  title     = {Cross-Layer Protocol Invariants for Proactive Handover
-               at the {LEO} Satellite Edge},
-  booktitle = {Proceedings of the 11th ACM/IEEE Symposium on Edge
-               Computing (SEC)},
-  year      = {2026},
-  month     = oct,
-}
-```
 
 
 ## License
