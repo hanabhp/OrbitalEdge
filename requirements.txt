@@ -1,0 +1,30 @@
+# SkyHandover — Python dependencies
+# Install: pip install -r requirements.txt
+#
+# Core (required for all experiments)
+numpy>=1.24.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# Figures
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# LLM inference (optional — required for SkyHandover production path)
+# Uncomment if GPU available:
+# transformers>=4.40.0
+# peft>=0.10.0          # LoRA fine-tuning
+# bitsandbytes>=0.43.0  # 8-bit quantization for edge deployment
+# torch>=2.1.0
+
+# Hardware path (optional — GNU Radio must be installed separately)
+# GNU Radio 3.10.x: https://wiki.gnuradio.org/index.php/InstallingGR
+# UHD: https://files.ettus.com/manual/page_install.html
+# srsRAN: https://docs.srsran.com/en/latest/
+
+# Data handling
+pandas>=2.0.0
+tqdm>=4.65.0
+
+# Testing
+pytest>=7.4.0

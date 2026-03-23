@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use OrbitalEdge in your research, please cite the paper below."
+type: software
+title: "OrbitalEdge: Cross-Layer Protocol Invariants for Proactive Handover at the LEO Satellite Edge"
+version: "1.0.0"
+date-released: "2026-10-01"
+license: MIT
+repository-code: "https://github.com/hanapasandi/orbitaledge"
+url: "https://hanapasandi.github.io/orbitaledge/demo/"
+abstract: >
+  OrbitalEdge is an O-RAN Near-RT RIC rApp for proactive LEO NTN handover prediction
+  using 16 cross-layer protocol invariants spanning PHY through PDCP. A gradient-boosted
+  predictor and LLM reranker (Llama-3.2-1B, LoRA fine-tuned) achieve 8.3 seconds mean
+  lead time and F1 of 0.923 on a held-out carrier, improving handover-window TCP
+  throughput by 34.2 percent over 3GPP Conditional Handover Release 17.
+
+authors:
+  - family-names: Pasandi
+    given-names: "Hannah B."
+    affiliation: "Sky Computing Lab, UC Berkeley"
+    email: "hanapasandi@eecs.berkeley.edu"
+
+  - family-names: Rousseau
+    given-names: Franck
+    affiliation: "University Grenoble Alpes"
+
+  - family-names: Nadeem
+    given-names: Tamer
+    affiliation: "Virginia Commonwealth University"
+
+preferred-citation:
+  type: conference-paper
+  title: "Cross-Layer Protocol Invariants for Proactive Handover at the LEO Satellite Edge"
+  authors:
+    - family-names: Pasandi
+      given-names: "Hannah B."
+      affiliation: "Sky Computing Lab, UC Berkeley"
+    - family-names: Rousseau
+      given-names: Franck
+      affiliation: "University Grenoble Alpes"
+    - family-names: Nadeem
+      given-names: Tamer
+      affiliation: "Virginia Commonwealth University"
+  collection-title: "Proceedings of the 11th ACM/IEEE Symposium on Edge Computing (SEC)"
+  year: 2026
+  month: 10
+  keywords:
+    - NTN
+    - handover prediction
+    - O-RAN
+    - LEO satellite
+    - cross-layer protocol
+    - 5G
+    - D2C
+    - edge computing

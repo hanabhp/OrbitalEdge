@@ -1,0 +1,54 @@
+name: Tests
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
+
+      - name: Run experiments (generates locked_results.json)
+        working-directory: src
+        run: python run_experiments.py
+
+      - name: Run extended experiments (E1 to E6)
+        working-directory: src
+        run: python run_new_experiments.py
+
+      - name: Run baseline comparison (nine methods)
+        working-directory: src
+        run: python run_strong_baselines.py
+
+      - name: Run full test suite (33 tests)
+        run: python -m pytest tests/test_all.py -v --tb=short
+        env:
+          PYTHONPATH: src
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: results-py${{ matrix.python-version }}
+          path: results/
+          retention-days: 30
